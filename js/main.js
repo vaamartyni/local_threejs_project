@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from './addons/controls/OrbitControls.js'; // Ensure OrbitControls.js is in the correct path
 
 const textElement = document.getElementById('animated-text');
+textElement.classList.remove("hidden"); // Removes the class 'my-class'
 const replayButton = document.getElementById('cb-replay');
 
 const text = textElement.textContent;
