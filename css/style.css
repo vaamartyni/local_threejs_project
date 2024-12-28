@@ -24,11 +24,10 @@ html, body {
     line-height: 1.5;
     user-select: none;
     font-size: 16px;
-    opacity: 1;
 }
 
 #hidden {
-    opacity: 1;
+    opacity: 0;
 }
 
 #animated-text::after {
