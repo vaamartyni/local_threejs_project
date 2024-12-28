@@ -1,0 +1,66 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #000;
+    color: #cccccc;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+/* Animated Text */
+#animated-text {
+    position: relative;
+    line-height: 1.5;
+    user-select: none;
+    font-size: 16px;
+}
+
+#animated-text::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 24px;
+    background-color: #0037af;
+    animation: blink 1s steps(1, start) infinite;
+    margin-left: 4px;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Replay Button */
+#cb-replay {
+    fill: #cccccc;
+    width: 24px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#cb-replay:hover {
+    fill: #cccccc;
+}
+
+/* Three.js Canvas */
+#globe {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
